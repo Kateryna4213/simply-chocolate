@@ -1,0 +1,113 @@
+.menu-item {
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+.header-logo {
+  color: var(--main-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+}
+.logo-icon {
+  margin-left: 4px;
+}
+
+.header-logo-accent {
+  font-style: italic;
+}
+.menu-item {
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.header-menu-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.header-menu {
+  display: flex;
+  gap: 24px;
+}
+.social-media-list {
+  display: flex;
+  gap: 18px;
+}
+/* HEO SECTION */
+.hero-section {
+  padding-bottom: 72px;
+}
+.hero-container {
+  background-color: #48433c;
+  border-radius: 30px;
+  padding: 380px 40px 40px 40px;
+}
+
+.hero-title {
+  color: var(--secondary-text-color);
+  max-width: 484px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -0.03em;
+}
+.hero-btn {
+  background-color: var(--accent-color);
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: none;
+  margin-right: 14px;
+}
+.hero-btn-text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+.link.hero-btn-text {
+  border-radius: 100px;
+  border: 1px solid #fff;
+  padding: 14px 40px;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+.advantages {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.advantages-list {
+  display: flex;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.advantages-item {
+  width: calc((100%-88px * 2) / 3);
+}
+.section-title {
+  text-align: center;
+}
+.taste-title {
+  max-width: 411px;
+  margin: 0 auto;
+}

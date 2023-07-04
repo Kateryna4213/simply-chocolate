@@ -1,0 +1,70 @@
+@import url(./desktop.css);
+
+:root {
+  --main-text-color: #111;
+  --secondary-text-color: #fff;
+  --accent-color: #fd9222;
+  --main-background-color: #1e1823;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  border-color: #fafafa;
+}
+
+/* CONTAINER чистий розмiр (1137px) контенту,
+плюс падінги право та ліво по 15px */
+.container {
+  max-width: 1166px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+/* CONTAINER CLOSE*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+button {
+  font-family: inherit;
+}
+.icons-svg {
+  fill: none;
+  stroke: black;
+}
+
+/* COMPONENTS */
