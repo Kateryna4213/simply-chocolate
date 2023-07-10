@@ -1,6 +1,7 @@
-@import url(./desktop.css);
+@import url(./main.css);
 
 :root {
+  --background-color: #fafafa;
   --main-text-color: #111;
   --secondary-text-color: #fff;
   --accent-color: #fd9222;
@@ -24,7 +25,7 @@ ol {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  border-color: #fafafa;
+  background-color: var(--background-color);
 }
 
 /* CONTAINER чистий розмiр (1137px) контенту,
@@ -56,6 +57,9 @@ body {
 .link {
   text-decoration: none;
 }
+.scroller-link {
+  color: #fff;
+}
 img {
   display: block;
 }
@@ -67,4 +71,28 @@ button {
   stroke: black;
 }
 
-/* COMPONENTS */
+/* ------ COMPONENTS ------ */
+
+/* Круг для скролла вниз. Таблетка десктоп однакові, мобілка менший розмір кола */
+.scroll-down {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span-accent {
+  color: var(--accent-color);
+}
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
