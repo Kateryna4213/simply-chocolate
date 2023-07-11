@@ -8,8 +8,8 @@
   letter-spacing: -0.02em;
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 32px;
+  /* padding-top: 24px;
+  padding-bottom: 32px; */
 }
 .header-logo {
   color: var(--main-text-color);
@@ -34,6 +34,16 @@
   line-height: 1.14;
   letter-spacing: -0.02em;
 }
+.menu-link-hover {
+  transition: color 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.menu-link-hover,
+.social-media-item-link,
+.header-logo {
+  /* розширення клікабельності посилань для десктопа */
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
 .page-header-container {
   display: flex;
   align-items: center;
@@ -53,6 +63,17 @@
   display: flex;
   gap: 18px;
 }
+
+/* HOVER FOCUS STATES */
+.menu-link-hover:hover,
+.menu-link-hover:focus {
+  color: var(--accent-color);
+}
+.social-media-item-link:hover .icons-svg,
+.social-media-item-link:focus .icons-svg {
+  stroke: var(--accent-color);
+}
+
 /* / ---------HEADER STYLES--------- */
 
 /* HERO SECTION */
@@ -112,6 +133,7 @@
   letter-spacing: -0.03em;
   margin-left: auto;
 }
+/* HOVER FOCUS STATES */
 
 /* ADVANTAGES SECTION */
 .advantages {
@@ -162,6 +184,18 @@
   line-height: 1.29;
   /* line-height: 18px; */
   letter-spacing: -0.28px;
+}
+.svg-box {
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+
+  /* desktop */
+  margin-bottom: 22px;
 }
 
 /* TASTE */
@@ -247,6 +281,21 @@
   line-height: 24px;
   margin-bottom: 28px;
 }
+.made-item {
+  position: relative;
+}
+.made-item::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+}
 
 .made-item-text {
   color: var(--main-text-color);
@@ -328,12 +377,14 @@
   padding-bottom: 50px;
   background-color: var(--main-background-color);
 }
-.container {
-}
+
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  /* desktop */
+  margin-bottom: 78px;
 }
 
 .footer-main-text {
@@ -363,28 +414,62 @@
   display: flex;
   flex-direction: column;
   row-gap: 14px;
-  align-items: start;
+  align-items: flex-start;
 }
-.contact-info {
-}
+
 .contacts-list {
   padding-left: 0;
 }
-.list {
+.white {
+  color: var(--secondary-text-color);
 }
+
 .contacts-item {
 }
 
 .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .navigation {
 }
 .navigation-list {
   display: flex;
+  gap: 24px;
+}
+.input-field {
 }
 .nav-list-item {
 }
 .email-input {
+  padding: 14px 24px;
+  width: 313px;
+  background-color: transparent;
+  outline: none;
+
+  border-radius: 30px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+}
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.36px;
+
+  /* desktop */
+  margin-right: 8px;
 }
 .submit-btn {
+  padding: 17px 33px;
+  max-width: 137px;
+  text-align: center;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--accent-color);
+
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
 }

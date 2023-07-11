@@ -6,6 +6,7 @@
   --secondary-text-color: #fff;
   --accent-color: #fd9222;
   --main-background-color: #1e1823;
+  --hover-state-bg-color: #fcf1e0;
 }
 
 p,
@@ -22,6 +23,7 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
+  padding-left: 0;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -66,11 +68,20 @@ img {
 button {
   font-family: inherit;
 }
+button:hover,
+button:focus,
+a:hover,
+a:focus {
+  cursor: pointer;
+}
 .icons-svg {
   fill: none;
   stroke: black;
 }
-
+/* TRANSITION */
+.icons-svg {
+  transition: stroke 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 /* ------ COMPONENTS ------ */
 
 /* Круг для скролла вниз. Таблетка десктоп однакові, мобілка менший розмір кола */

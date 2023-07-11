@@ -32,19 +32,24 @@
           </a>
           <ul class="header-menu list">
             <li class="menu-item">
-              <a class="menu-link link" href="">Home</a>
+              <a class="menu-link menu-link-hover link" href="">Home</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="#how-it's-made">How it’s made?</a>
+              <a class="menu-link menu-link-hover link" href="#how-it's-made"
+                >How it’s made?</a
+              >
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="">Chocolate is loved</a>
+              <a class="menu-link menu-link-hover link" href=""
+                >Chocolate is loved</a
+              >
             </li>
           </ul>
         </nav>
         <ul class="social-media-list list">
           <li class="social-media-item">
             <a
+              class="social-media-item-link"
               target="_blank"
               aria-label="instagram"
               href=""
@@ -56,6 +61,7 @@
           </li>
           <li class="social-media-item">
             <a
+              class="social-media-item-link"
               target="_blank"
               aria-label="instagram"
               href=""
@@ -67,6 +73,7 @@
           </li>
           <li class="social-media-item">
             <a
+              class="social-media-item-link"
               target="_blank"
               aria-label="twitter"
               href=""
@@ -109,9 +116,16 @@
       <section class="advantages">
         <div class="container">
           <div class="inner-container">
-            <h2 hidden></h2>
+            <h2 hidden>advantages</h2>
             <ul class="advantages-list list">
               <li class="advantages-item">
+                <div class="svg-box">
+                  <svg class="svg" width="32" height="32">
+                    <use
+                      href="./images/symbol-defs.svg#icon-chocolate-bar"
+                    ></use>
+                  </svg>
+                </div>
                 <h3 class="advantages-title">Unsurpassed taste</h3>
                 <p class="advantages-text">
                   Crafted with the finest quality cocoa beans and a dedication
@@ -121,6 +135,11 @@
                 </p>
               </li>
               <li class="advantages-item">
+                <div class="svg-box">
+                  <svg class="svg" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-coin"></use>
+                  </svg>
+                </div>
                 <h3 class="advantages-title">Affordable price</h3>
                 <p class="advantages-text">
                   Indulge in high-quality chocolate without breaking the bank
@@ -131,6 +150,13 @@
                 </p>
               </li>
               <li class="advantages-item">
+                <div class="svg-box">
+                  <svg class="svg" width="32" height="32">
+                    <use
+                      href="./images/symbol-defs.svg#icon-utensil-spoon"
+                    ></use>
+                  </svg>
+                </div>
                 <h3 class="advantages-title">Own production</h3>
                 <p class="advantages-text">
                   We take pride in our own production process, ensuring that
@@ -366,14 +392,26 @@
         <div class="footer-bottom">
           <nav class="navigation">
             <ul class="navigation-list list">
-              <li class="nav-list-item">Home</li>
-              <li class="nav-list-item">How it’s made?</li>
-              <li class="nav-list-item">Chocolate is loved</li>
+              <li class="nav-list-item">
+                <a class="menu-link white link" href="">Home</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="menu-link white link" href="">How it’s made?</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="menu-link white link" href="">Chocolate is loved</a>
+              </li>
             </ul>
           </nav>
+          <div class="input-field">
+            <input
+              type="text"
+              class="email-input"
+              placeholder="Enter your email"
+            />
+            <button type="submit" class="submit-btn">Subscribe</button>
+          </div>
         </div>
-        <input type="text" class="email-input" placeholder="Enter your email" />
-        <button type="submit" class="submit-btn">Subscribe</button>
       </div>
     </footer>
   </body>
